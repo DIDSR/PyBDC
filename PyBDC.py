@@ -7,7 +7,6 @@ Created on Tue Feb 28 13:21:41 2023
 """
 
 #%% import necessary modules
-
 from tkinter import filedialog, Menu, IntVar, W
 import customtkinter 
 import numpy as np 
@@ -25,7 +24,7 @@ def quit_me():
     root.quit()
     root.destroy()
 
-# calculate pDgN
+# calculate polyenergetic normalized glandular dose coefficients (pDgN) from specified breast models
 def calculate_pDgNct(*values):
     keV = values[2]; I = values[3];
     psiE = np.array(list(map(exposure_per_fluence,keV)))
@@ -42,7 +41,7 @@ def calculate_pDgNct(*values):
     
     return pDgN
 
-# read method outputs
+# read method outputs display in GUI specifications for certian methods 
 with open('method_specific_outputs.txt','r') as file:
      data = file.readlines() # all the outputs
      
@@ -414,8 +413,9 @@ class Main_Window():
         chart = FigureCanvasTkAgg(self.figure, master = self.graph_frame)
         chart.get_tk_widget().grid(row=0,column=0,columnspan=2)
     
-    # calculate mgd
+    # calculate mean glandur dosage from user specificed inputs
     def calculate_mgd(self,air_kerma_input,air_kerma,dgn,output_units,number_of_projections):
+        # unit conversions based on user selection 
         if air_kerma_input != 'mGy':
             if air_kerma_input == 'mrad':
                 air_kerma = air_kerma * 0.01 # convert from mrad air kerma to mGy
@@ -459,6 +459,7 @@ class Main_Window():
         
         
         try:
+            # numbers only 
             air_kerma_check = len(air_kerma)
             number_of_projections_check = len(number_of_projections)
             air_kerma = float(air_kerma) # check if only numbers
@@ -473,7 +474,7 @@ class Main_Window():
                 if kev_check == 0:
                     raise(TypeError)
         
-            # calculate method based on what is chosen
+            # calculate mgd based on specified model 
             if current_method == 1: #Sarno 49 kVp W spectra
                 # get parameters
                 HVL =  self.HVL_combo.get()
@@ -481,12 +482,12 @@ class Main_Window():
                 breast_glandularity = self.Breast_glandularity_combo.get()
                 breast_height = ''.join(self.Breast_height_combo.get().split(' ')[0:2])
                 
-                # calculate dgn for polyenergetic
+                # calculate polyenergetic dgn coefficients 
                 dgn_subtable_breast_height = Sarno_poly_dgn.groupby(['breast height']).get_group(breast_height)
                 dgn_subtable_glandularity = dgn_subtable_breast_height.groupby(['Glandularity']).get_group(breast_glandularity)
                 dgn = dgn_subtable_glandularity.loc[float(HVL), str(breast_diameter)]
                 
-                # calculate mgd
+                # calculate mgd based on pdgn and input parameters 
                 self.mgd = self.calculate_mgd(air_kerma_input_units, air_kerma, dgn, output_units,number_of_projections)
                 
                 self.output_dose('Breast diameter: ', breast_diameter,
@@ -518,7 +519,7 @@ class Main_Window():
                                  'Breast Height: ', self.Breast_height_combo.get())
          
             elif current_method ==3: # Hernandez any spectrum
-                # get the VGF and DgN list
+                # get the VGF and DgN list from text file 
                 VGF = self.VGF_combo.get().split('=')[0].strip()
                 DgN_list = Hernandez_hetero_mono_dgn.loc[:,VGF].tolist()
                 
