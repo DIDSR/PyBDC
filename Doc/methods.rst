@@ -55,7 +55,7 @@ Sarno Any Specturm
 
 Hernandez Any Spectrum (Hernandez Heterogeneous BCT) 
 
-* Activated: Heterogeneous Categories, Air Kerma, Air Kerma units, MGD units, Input Incident Spectrum, Graph Spectrum*, Clear Text, and Calculate Dose
+* Activated: Heterogeneous Categories, Air Kerma, Air Kerma units, MGD units, Input Incident Spectrum, Graph Spectrum, Clear Text, and Calculate Dose
 
 * Deactivated: Breast Diameter, Breast Height, Breast Glandularity, HVL
 
