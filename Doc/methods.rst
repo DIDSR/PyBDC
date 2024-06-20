@@ -25,10 +25,6 @@ V3: Volume Glandular Fraction (VGF) = 9.5%, median volume of 616 cm3, median dia
 V5: Volume Glandular Fraction (VGF) = 3.8%, median volume of 1174 cm3, median diameter through the center of 124.4 mm, and median diameter at the chest wall of 150.4 mm
 
 
-Choosing a Method
-==================
-The GUI offers three methods the user can choose from which are Sarno Koning BCT, Sarno Incident Spectrum, and Hernandez Heterogeneous BCT via radio button selection. Next to each method, a radio button can be found that if pressed selects the method. You will note that once pressed, certain buttons and parameters are activated, and others are deactivated. What is activated and deactivated is as follows:
-
 Sarno 49 kVp W Spectra (Sarno Koning BCT) 
 * Activated: Breast Diameter, Breast Height, Breast Glandularity, HVL, Air Kerma, Air Kerma units, MGD units, Clear Text, and Calculate Dose
 * Deactivated: Heterogeneous Categories, Input Incident Spectrum, and Graph Spectrum
@@ -113,6 +109,6 @@ The chosen incident spectrum file must have a specific format which differs for 
 Incident Spectrum Format
 ========================
 
-First, the incident spectrum must be saved in a text file (typically a ‘.txt’ file but any text file format is accepted) and it can have any name (there is no naming convention). Next, the text file inputs must be in the form of two columns where the keV is the first column and the counts is the second column. It should be noted that keV uses a step size of 0.5. Any step size can be used. The Hernandez Heterogeneous BCT DgN coefficients are interpolated to fit any step size.
- 
+First, the incident spectrum must be saved in a text file (typically a ‘.txt’ file but any text file format is accepted) and it can have any name (there is no naming convention). Next, the text file inputs must be in the form of two columns where the keV is the first column and the counts is the second column. An image of the proper format is show below. You will note that the keV uses a step size of 0.5. Any step size can be used. The Hernandez Heterogeneous BCT DgN coefficients are interpolated to fit any step size.
+
 Furthermore, Sarno Incident Spectrum and Hernandez Heterogeneous BCT take different ranges of values. Sarno Incident Spectrum uses a keV range of 8-80 keV inclusive. Hernandez Heterogeneous BCT, on the other hand, uses a range of 7-90 keV inclusive.
