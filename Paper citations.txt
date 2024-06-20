@@ -1,19 +1,13 @@
 Paper citations:
 
-Sechopoulos 49 kVp W Spectra:
-
 Sechopoulos, I., Feng, S. S., & D'Orsi, C. J. (2010). Dosimetric characterization of a dedicated breast computed 
 tomography clinical prototype. Medical physics, 37(8), 4110–4120. https://doi.org/10.1118/1.3457331
-
-Sarno Any Spectrum and Sarno 49 kVp W Spectra:
 
 Sarno, A., Mettivier, G., Tucciariello, R. M., Bliznakova, K., Boone, J. M., Sechopoulos, I., Di Lillo, F., & Russo, P. (2018). 
 Monte Carlo evaluation of glandular dose in cone-beam X-ray computed tomography dedicated to the breast: Homogeneous and 
 heterogeneous breast models. Physica medica : PM : an international journal devoted to the applications of physics to medicine 
 and biology : official journal of the Italian Association of Biomedical Physics (AIFB), 51, 99–107. 
 https://doi.org/10.1016/j.ejmp.2018.05.021
-
-Hernandez Any Spectrum:
 
 Hernandez, A. M., & Boone, J. M. (2017). Average glandular dose coefficients for pendant-geometry breast CT using 
 realistic breast phantoms. Medical physics, 44(10), 5096–5105. https://doi.org/10.1002/mp.12477
