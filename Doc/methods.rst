@@ -30,6 +30,7 @@ Choosing a Method
 The GUI offers three methods the user can choose from which are Sarno Koning BCT, Sarno Incident Spectrum, and Hernandez Heterogeneous BCT via radio button selection. Next to each method, a radio button can be found that if pressed selects the method. You will note that once pressed, certain buttons and parameters are activated, and others are deactivated. What is activated and deactivated is as follows:
 
 Sarno 49 kVp W Spectra (Sarno Koning BCT) 
+
 * Activated: Breast Diameter, Breast Height, Breast Glandularity, HVL, Air Kerma, Air Kerma units, MGD units, Clear Text, and Calculate Dose
 
 * Deactivated: Heterogeneous Categories, Input Incident Spectrum, and Graph Spectrum
@@ -37,6 +38,7 @@ Sarno 49 kVp W Spectra (Sarno Koning BCT)
 * Assumptions: Cylindrical breats of homogenous composition. Skin layer of 1.45 cm. 65 cm radiation source to isocenter distance. 
 
 Sechopoulos 49 kVp Any Spectra (Sechopoulos Koning BCT) 
+
 * Activated: Breast Diameter, Breast Height, Breast Glandularity, HVL, Air Kerma, Air Kerma units, MGD units, Clear Text, and Calculate Dose
 
 * Deactivated: Heterogeneous Categories, Input Incident Spectrum, and Graph Spectrum 
@@ -44,6 +46,7 @@ Sechopoulos 49 kVp Any Spectra (Sechopoulos Koning BCT)
 * Assumptions: Semi-ellipsoidal breast of homogeneous composition. Skin layer of 1.45 mm. 65 cm radiation source to isocenter distance. 
 
 Sarno Any Specturm 
+
 * Activated: Breast Diameter, Breast Height, Breast Glandularity, Air Kerma, Air Kerma units, MGD units, Input Incident Spectrum, Graph Spectrum*, Clear Text, and Calculate Dose
 
 * Deactivated: HVL, Heterogeneous Categories
@@ -51,6 +54,7 @@ Sarno Any Specturm
 * Assumptions: Cylindircal brast of homogenous compositon. 65 cm radiatoin source to isocenter distance. 
 
 Hernandez Any Spectrum (Hernandez Heterogeneous BCT) 
+
 * Activated: Heterogeneous Categories, Air Kerma, Air Kerma units, MGD units, Input Incident Spectrum, Graph Spectrum*, Clear Text, and Calculate Dose
 
 * Deactivated: Breast Diameter, Breast Height, Breast Glandularity, HVL
