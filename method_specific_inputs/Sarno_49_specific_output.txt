@@ -1,5 +1,0 @@
-This method assumes a cylindrical breast 
-shape of homogeneous mixture where 
-air kerma is measured from the 
-radiation source. The method further 
-provides different Al filtrations.
