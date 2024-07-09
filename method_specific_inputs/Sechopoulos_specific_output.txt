@@ -1,0 +1,4 @@
+It assumes a semi-ellipsoidal 
+breast shape of homogeneous mixture 
+where air kerma is measured 65 cm from 
+radiation source.

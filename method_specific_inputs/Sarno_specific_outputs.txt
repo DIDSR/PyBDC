@@ -1,0 +1,5 @@
+Any spectrum can be used as long as
+radiation source to isocenter distance 
+is 65 cm.
+
+It assumes heterogeneous composition.
