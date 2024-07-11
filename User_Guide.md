@@ -54,4 +54,4 @@ be added. This is defined as the number of individual X-ray measurements taken d
 	2. The text will remain in the box unless you elect to clear the box. The box can be easily cleared by pressing 
 	   the Clear Text button. Do note that your previous values will be cleared and cannot be retrieved.
 
-6. [method_specific_outputs.txt](method_specific_outputs.txt) has method specific outputs given assumptions of homogenous or heterogenous composition
+6. [method_specific_inputs.toml](method_specific_inputs.toml) has method specific outputs given assumptions of homogenous or heterogenous composition
