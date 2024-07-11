@@ -1,0 +1,30 @@
+# method_specific_inputs.toml
+
+[method_specific_inputs]
+Sarno_49_specific_output = "This method assumes a cylindrical breast shape of homogeneous mixture where air kerma is measured from the radiation source. The method further provides different Al filtrations."
+
+Sarno_specific_outputs = """
+Any spectrum can be used as long as radiation source to isocenter distance is 65 cm.
+
+It assumes heterogeneous composition."""
+
+Hernandez_specific_output = """
+Any spectrum can be used as long as radiation source to isocenter distance is 65 cm.
+
+It assumes heterogeneous composition.
+
+Hernandez VGF median specifications:
+V1:
+- volume of 276 cm^3
+- center of mass diameter of 87 mm
+- chest wall diameter of 103.4 mm
+V3:
+- volume of 616 cm^3
+- center of mass diameter of 106.6 mm
+- chest wall diameter of 125.2
+V5:
+- volume of 1174 cm^3
+- center of mass diameter of 124.4 mm
+- chest wall diameter of 150.4 mm"""
+
+Sechopoulos_specific_output = "It assumes a semi-ellipsoidal breast shape of homogeneous mixture where air kerma is measured 65 cm from radiation source."

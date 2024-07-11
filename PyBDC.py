@@ -20,8 +20,7 @@ from matplotlib.pyplot import (
 
 plt_ioff()  # suppress pyplot popups
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import sys
-import json
+import tomli
 from dose_equations import (
     Sarno_mono_dgn,
     Sarno_poly_dgn,
@@ -77,8 +76,9 @@ def calculate_pDgNct(*values):
 
 
 # read method outputs display in GUI specifications for certian methods
-with open("method_specific_inputs.json", "r") as file_method_specific_inputs:
-    dict_method_specific_inputs = json.load(file_method_specific_inputs)
+with open("method_specific_inputs.toml", "rb") as file_method_specific_inputs:
+    config_method_specific_inputs = tomli.load(file_method_specific_inputs)
+
 
 # %%% Main code
 
@@ -267,7 +267,7 @@ class Main_Window:
         self.output_textbox.configure(state="normal")
         self.output_textbox.insert(
             "end",
-            f'{"".join(dict_method_specific_inputs["Sarno_specific_outputs"])}',
+            f'{"".join(config_method_specific_inputs["method_specific_inputs"]["Sarno_specific_outputs"])}',
             "green",
         )
         self.output_textbox.configure(state="disabled")
@@ -422,7 +422,7 @@ class Main_Window:
             self.output_textbox.configure(state="normal")
             self.output_textbox.insert(
                 "end",
-                f'{"".join(dict_method_specific_inputs["Sarno_49_specific_output"])}',
+                f'{"".join(config_method_specific_inputs["method_specific_inputs"]["Sarno_49_specific_output"])}',
                 "green",
             )
             self.output_textbox.configure(state="disabled")
@@ -454,7 +454,7 @@ class Main_Window:
             self.output_textbox.delete("0.0", "end")
             self.output_textbox.insert(
                 "end",
-                f'{"".join(dict_method_specific_inputs["Sarno_specific_outputs"])}',
+                f'{"".join(config_method_specific_inputs["method_specific_inputs"]["Sarno_specific_outputs"])}',
                 "green",
             )
             self.output_textbox.configure(state="disabled")
@@ -474,7 +474,7 @@ class Main_Window:
             self.output_textbox.delete("0.0", "end")
             self.output_textbox.insert(
                 "end",
-                f'{"".join(dict_method_specific_inputs["Hernandez_specific_output"])}',
+                f'{"".join(config_method_specific_inputs["method_specific_inputs"]["Hernandez_specific_output"])}',
                 "green",
             )
             self.output_textbox.configure(state="disabled")
@@ -494,7 +494,7 @@ class Main_Window:
             self.output_textbox.delete("0.0", "end")
             self.output_textbox.insert(
                 "end",
-                f'{"".join(dict_method_specific_inputs["Sechopoulos_specific_output"])}',
+                f'{"".join(config_method_specific_inputs["method_specific_inputs"]["Sechopoulos_specific_output"])}',
                 "green",
             )
             self.output_textbox.configure(state="disabled")
