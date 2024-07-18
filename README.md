@@ -30,7 +30,7 @@ Run PyBDC.
 python3 PyBDC.py
 ```
 
-PyBDC can also be run through its container available at https://huggingface.co/didsr/PyBDC-Container
+PyBDC can also be run through its container available at https://huggingface.co/didsr/PyBDC-Container, or by executing the shell script [run_container.sh](run_container.sh).
 
 User guide
 ----------
