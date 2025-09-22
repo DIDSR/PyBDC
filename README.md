@@ -44,10 +44,13 @@ For more information about the Catalog of Regulatory Science Tools, email RST_CD
 
 Tool Reference 
 •	RST Reference Number: RST24MD17.01
+
 •	Date of Publication: 09/19/2025
+
 •	Recommended Citation: U.S. Food and Drug Administration. (2025). PyBDC: Python Breast Dosage Calculator (RST24MD17.01). https://cdrh-rst.fda.gov/pybdc-python-breast-dosage-calculator 
 
 PyBDC Team: Harsha Marupudi, M.Eng., Joseph Manus B.S., Bahaa Ghammraoui, Ph.D. US Food and Drug Administration, Center for Devices and Radiological Health, Office of Science and Engineering Labs, Division of Imaging, Diagnostics, and Software Reliability.
+
 References
 ----------
 1. Sarno, A., Mettivier, G., Di Lillo, F., & Russo, P. (2017). A Monte Carlo study of monoenergetic and polyenergetic normalized glandular dose (DgN) coefficients in mammography. Physics in medicine and biology, 62(1), 306–325. https://doi.org/10.1088/1361-6560/62/1/306
